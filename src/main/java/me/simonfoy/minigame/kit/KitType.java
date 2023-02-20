@@ -7,7 +7,8 @@ public enum KitType {
 
     KNIGHT(ChatColor.GOLD + "Knight", Material.IRON_HELMET, "Knight Kit"),
     ASSASSIN(ChatColor.RED + "Assassin", Material.LEATHER_HELMET, "Assassin Kit"),
-    MAGE(ChatColor.RED + "Mage", Material.GOLDEN_HELMET, "Mage Kit");
+    MAGE(ChatColor.RED + "Mage", Material.GOLDEN_HELMET, "Mage Kit"),
+    NARUTO(ChatColor.RED + "Naruto", Material.GOLDEN_HELMET, "Naruto Kit");
 
     private String display, description;
     private Material material;

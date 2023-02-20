@@ -7,6 +7,7 @@ import me.simonfoy.minigame.kit.KitType;
 import me.simonfoy.minigame.kit.type.AssassinKit;
 import me.simonfoy.minigame.kit.type.KnightKit;
 import me.simonfoy.minigame.kit.type.MageKit;
+import me.simonfoy.minigame.kit.type.NarutoKit;
 import me.simonfoy.minigame.manager.ConfigManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -142,6 +143,8 @@ public class Arena {
             kits.put(uuid, new AssassinKit(minigame, uuid));
         } else if (type == KitType.MAGE) {
             kits.put(uuid, new MageKit(minigame, uuid));
+        } else if (type == KitType.NARUTO) {
+            kits.put(uuid, new NarutoKit(minigame, uuid));
         }
     }
 
