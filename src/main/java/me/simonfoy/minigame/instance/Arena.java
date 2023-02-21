@@ -4,10 +4,7 @@ import me.simonfoy.minigame.GameState;
 import me.simonfoy.minigame.Minigame;
 import me.simonfoy.minigame.kit.Kit;
 import me.simonfoy.minigame.kit.KitType;
-import me.simonfoy.minigame.kit.type.AssassinKit;
-import me.simonfoy.minigame.kit.type.KnightKit;
-import me.simonfoy.minigame.kit.type.MageKit;
-import me.simonfoy.minigame.kit.type.NarutoKit;
+import me.simonfoy.minigame.kit.type.*;
 import me.simonfoy.minigame.manager.ConfigManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -137,14 +134,38 @@ public class Arena {
 
     public void setKit(UUID uuid, KitType type) {
         removeKit(uuid);
-        if (type == KitType.KNIGHT) {
-            kits.put(uuid, new KnightKit(minigame, uuid));
-        } else if (type == KitType.ASSASSIN) {
-            kits.put(uuid, new AssassinKit(minigame, uuid));
-        } else if (type == KitType.MAGE) {
-            kits.put(uuid, new MageKit(minigame, uuid));
+        if (type == KitType.BATMAN) {
+            kits.put(uuid, new BatmanKit(minigame, uuid));
+        } else if (type == KitType.SPIDERMAN) {
+            kits.put(uuid, new SpidermanKit(minigame, uuid));
+        } else if (type == KitType.MARIO) {
+            kits.put(uuid, new MarioKit(minigame, uuid));
         } else if (type == KitType.NARUTO) {
             kits.put(uuid, new NarutoKit(minigame, uuid));
+        } else if (type == KitType.GOKU) {
+            kits.put(uuid, new GokuKit(minigame, uuid));
+        } else if (type == KitType.YOSHI) {
+            kits.put(uuid, new YoshiKit(minigame, uuid));
+        } else if (type == KitType.SUPERMAN) {
+            kits.put(uuid, new SupermanKit(minigame, uuid));
+        } else if (type == KitType.HULK) {
+            kits.put(uuid, new HulkKit(minigame, uuid));
+        } else if (type == KitType.DARTHVADER) {
+            kits.put(uuid, new DarthVaderKit(minigame, uuid));
+        } else if (type == KitType.THOR) {
+            kits.put(uuid, new ThorKit(minigame, uuid));
+        } else if (type == KitType.LOKI) {
+            kits.put(uuid, new LokiKit(minigame, uuid));
+        } else if (type == KitType.SASUKE) {
+            kits.put(uuid, new SasukeKit(minigame, uuid));
+        } else if (type == KitType.FRIEZA) {
+            kits.put(uuid, new FriezaKit(minigame, uuid));
+        } else if (type == KitType.SPONGEBOB) {
+            kits.put(uuid, new SpongebobKit(minigame, uuid));
+        } else if (type == KitType.SQUIDWARD) {
+            kits.put(uuid, new SquidwardKit(minigame, uuid));
+        } else if (type == KitType.YODA) {
+            kits.put(uuid, new YodaKit(minigame, uuid));
         }
     }
 

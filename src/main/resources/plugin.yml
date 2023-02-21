@@ -1,4 +1,4 @@
-name: Smash Minigame
+name: Smash_Minigame
 version: '${project.version}'
 main: me.simonfoy.minigame.Minigame
 api-version: 1.19
