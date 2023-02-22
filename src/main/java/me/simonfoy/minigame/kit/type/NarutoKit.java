@@ -43,92 +43,93 @@ public class NarutoKit extends Kit {
         player.getInventory().setHelmet(narutoHead);
 
 // Give the player a feather in slot 1 named "Shadow Clone Jutsu"
-        ItemStack feather = new ItemStack(Material.FEATHER, 1);
-        ItemMeta featherMeta = feather.getItemMeta();
-        featherMeta.setDisplayName(ChatColor.GOLD + "SHADOW CLONE JUTSU! " + ChatColor.GRAY + "- " + ChatColor.GOLD + "Right Click");
+        ItemStack shadowclonejutsu = new ItemStack(Material.WHITE_STAINED_GLASS_PANE, 1);
+        ItemMeta shadowclonejutsuMeta = shadowclonejutsu.getItemMeta();
+        shadowclonejutsuMeta.setDisplayName(ChatColor.GREEN + "SHADOW CLONE JUTSU " + ChatColor.GRAY + "- " + ChatColor.GREEN + "Right Click");
 
 // Add the ability information to the item's lore
-        List<String> featherLore = new ArrayList<>();
-        featherLore.add("");
-        featherLore.add(ChatColor.GOLD + "Right Click " + ChatColor.GRAY + "to create a");
-        featherLore.add(ChatColor.GRAY + "clone of yourself that");
-        featherLore.add(ChatColor.GRAY + "attacks nearby enemies. The");
-        featherLore.add(ChatColor.GRAY + "clone disappears after a short");
-        featherLore.add(ChatColor.GRAY + "period of time.");
-        featherMeta.setLore(featherLore);
+        List<String> shadowclonejutsuLore = new ArrayList<>();
+        shadowclonejutsuLore.add("");
+        shadowclonejutsuLore.add(ChatColor.GREEN + "Right Click " + ChatColor.GRAY + "to create a");
+        shadowclonejutsuLore.add(ChatColor.GRAY + "clone of yourself that");
+        shadowclonejutsuLore.add(ChatColor.GRAY + "attacks nearby enemies. The");
+        shadowclonejutsuLore.add(ChatColor.GRAY + "clone disappears after a short");
+        shadowclonejutsuLore.add(ChatColor.GRAY + "period of time.");
+        shadowclonejutsuMeta.setLore(shadowclonejutsuLore);
 
-        feather.setItemMeta(featherMeta);
-        player.getInventory().setItem(0, feather);
+        shadowclonejutsu.setItemMeta(shadowclonejutsuMeta);
+        player.getInventory().setItem(0, shadowclonejutsu);
 
 // Give the player a diamond in slot 2 named "Rasengan"
-        ItemStack diamond = new ItemStack(Material.DIAMOND, 1);
-        ItemMeta diamondMeta = diamond.getItemMeta();
-        diamondMeta.setDisplayName(ChatColor.GOLD + "RASENGAN! " + ChatColor.GRAY + "- " + ChatColor.GOLD + "[2]");
+        ItemStack rasengan = new ItemStack(Material.WHITE_STAINED_GLASS_PANE, 1);
+        ItemMeta rasenganMeta = rasengan.getItemMeta();
+        rasenganMeta.setDisplayName(ChatColor.GREEN + "RASENGAN " + ChatColor.GRAY + "- " + ChatColor.GREEN + "[2]");
 
 // Add the ability information to the item's lore
-        List<String> diamondLore = new ArrayList<>();
-        diamondLore.add("");
-        diamondLore.add(ChatColor.GRAY + "Press " + ChatColor.GOLD + "[2] " + ChatColor.GRAY + "to charge up");
-        diamondLore.add(ChatColor.GRAY + "and then launch a powerful");
-        diamondLore.add(ChatColor.GRAY + "ball of chakra that explodes on");
-        diamondLore.add(ChatColor.GRAY + "impact, dealing heavy damage");
-        diamondLore.add(ChatColor.GRAY + "to enemies in the area.");
-        diamondMeta.setLore(diamondLore);
+        List<String> rasenganLore = new ArrayList<>();
+        rasenganLore.add("");
+        rasenganLore.add(ChatColor.GRAY + "Press " + ChatColor.GREEN + "[2] " + ChatColor.GRAY + "to charge up");
+        rasenganLore.add(ChatColor.GRAY + "and then launch a powerful");
+        rasenganLore.add(ChatColor.GRAY + "ball of chakra that explodes on");
+        rasenganLore.add(ChatColor.GRAY + "impact, dealing heavy damage");
+        rasenganLore.add(ChatColor.GRAY + "to enemies in the area.");
+        rasenganMeta.setLore(rasenganLore);
 
-        diamond.setItemMeta(diamondMeta);
-        player.getInventory().setItem(1, diamond);
+        rasengan.setItemMeta(rasenganMeta);
+        player.getInventory().setItem(1, rasengan);
 
 // Give the player a Nether Star in slot 3 named "Uzumaki Barrage"
-        ItemStack netherStar = new ItemStack(Material.NETHER_STAR, 1);
-        ItemMeta netherStarMeta = netherStar.getItemMeta();
-        netherStarMeta.setDisplayName(ChatColor.GOLD + "UZUMAKI BARRAGE! " + ChatColor.GRAY + "- " + ChatColor.GOLD + "[3]");
+        ItemStack uzumakibarrage = new ItemStack(Material.WHITE_STAINED_GLASS_PANE, 1);
+        ItemMeta uzumakibarrageMeta = uzumakibarrage.getItemMeta();
+        uzumakibarrageMeta.setDisplayName(ChatColor.GREEN + "UZUMAKI BARRAGE " + ChatColor.GRAY + "- " + ChatColor.GREEN + "[3]");
 
 // Add the ability information to the item's lore
-        List<String> netherStarLore = new ArrayList<>();
-        netherStarLore.add("");
-        netherStarLore.add(ChatColor.GRAY + "Press " + ChatColor.GOLD + "[3] " + ChatColor.GRAY + "to unleash a flurry of");
-        netherStarLore.add(ChatColor.GRAY + "punches and kicks, dealing");
-        netherStarLore.add(ChatColor.GRAY + "damage to all enemies within");
-        netherStarLore.add(ChatColor.GRAY + "a short range.");
-        netherStarMeta.setLore(netherStarLore);
+        List<String> uzumakibarrageLore = new ArrayList<>();
+        uzumakibarrageLore.add("");
+        uzumakibarrageLore.add(ChatColor.GRAY + "Press " + ChatColor.GREEN + "[3] " + ChatColor.GRAY + "to unleash a flurry of");
+        uzumakibarrageLore.add(ChatColor.GRAY + "punches and kicks, dealing");
+        uzumakibarrageLore.add(ChatColor.GRAY + "damage to all enemies within");
+        uzumakibarrageLore.add(ChatColor.GRAY + "a short range.");
+        uzumakibarrageMeta.setLore(uzumakibarrageLore);
 
-        netherStar.setItemMeta(netherStarMeta);
-        player.getInventory().setItem(2, netherStar);
+        uzumakibarrage.setItemMeta(uzumakibarrageMeta);
+        player.getInventory().setItem(2, uzumakibarrage);
 
 // Give the player Blaze Powder in slot 4 named "Nine-Tails Chakra Mode"
-        ItemStack blazePowder = new ItemStack(Material.BLAZE_POWDER, 1);
-        ItemMeta blazeMeta = blazePowder.getItemMeta();
-        blazeMeta.setDisplayName(ChatColor.RED + "NINE-TAILS CHAKRA MODE! " + ChatColor.GRAY + "- " + ChatColor.RED + "[4]");
+        ItemStack ninetailschakramode = new ItemStack(Material.WHITE_STAINED_GLASS_PANE, 1);
+        ItemMeta ninetailschakramodeMeta = ninetailschakramode.getItemMeta();
+        ninetailschakramodeMeta.setDisplayName(ChatColor.GREEN + "NINE-TAILS CHAKRA MODE " + ChatColor.GRAY + "- " + ChatColor.GREEN + "[4]");
 
 // Add the ability information to the item's lore
-        List<String> blazeLore = new ArrayList<>();
-        blazeLore.add("");
-        blazeLore.add(ChatColor.GRAY + "Press " + ChatColor.RED + "[4] " + ChatColor.GRAY + "to transform into");
-        blazeLore.add(ChatColor.GRAY + "Nine-Tails Chakra Mode,");
-        blazeLore.add(ChatColor.GRAY + "increasing your speed and strength.");
-        blazeLore.add(ChatColor.GRAY + "You gain temporary invincibility");
-        blazeLore.add(ChatColor.GRAY + "and deal massive damage to enemies.");
-        blazeMeta.setLore(blazeLore);
+        List<String> ninetailschakramodeLore = new ArrayList<>();
+        ninetailschakramodeLore.add(ChatColor.GRAY + "Ultimate");
+        ninetailschakramodeLore.add("");
+        ninetailschakramodeLore.add(ChatColor.GRAY + "Press " + ChatColor.GREEN + "[4] " + ChatColor.GRAY + "to transform into");
+        ninetailschakramodeLore.add(ChatColor.GRAY + "Nine-Tails Chakra Mode,");
+        ninetailschakramodeLore.add(ChatColor.GRAY + "increasing your speed and strength.");
+        ninetailschakramodeLore.add(ChatColor.GRAY + "You gain temporary invincibility");
+        ninetailschakramodeLore.add(ChatColor.GRAY + "and deal massive damage to enemies.");
+        ninetailschakramodeMeta.setLore(ninetailschakramodeLore);
 
-        blazePowder.setItemMeta(blazeMeta);
-        player.getInventory().setItem(3, blazePowder);
+        ninetailschakramode.setItemMeta(ninetailschakramodeMeta);
+        player.getInventory().setItem(3, ninetailschakramode);
 
 // Give the player a light blue dye in slot 9 named "Chakra Regeneration"
-        ItemStack lightBlueDye = new ItemStack(Material.LIGHT_BLUE_DYE, 1);
-        ItemMeta lightBlueDyeMeta = lightBlueDye.getItemMeta();
-        lightBlueDyeMeta.setDisplayName(ChatColor.GOLD + "CHAKRA REGENERATION!");
+        ItemStack chakraregeneration = new ItemStack(Material.WHITE_STAINED_GLASS_PANE, 1);
+        ItemMeta chakraregenerationMeta = chakraregeneration.getItemMeta();
+        chakraregenerationMeta.setDisplayName(ChatColor.GREEN + "CHAKRA REGENERATION");
 
 // Add the ability information to the item's lore
-        List<String> lightBlueDyeLore = new ArrayList<>();
-        lightBlueDyeLore.add(ChatColor.GRAY + "Passive");
-        lightBlueDyeLore.add("");
-        lightBlueDyeLore.add(ChatColor.GRAY + "Regenerates chakra over time,");
-        lightBlueDyeLore.add(ChatColor.GRAY + "allowing you to use your");
-        lightBlueDyeLore.add(ChatColor.GRAY + "abilities more frequently.");
-        lightBlueDyeMeta.setLore(lightBlueDyeLore);
+        List<String> chakraregenerationLore = new ArrayList<>();
+        chakraregenerationLore.add(ChatColor.GRAY + "Passive");
+        chakraregenerationLore.add("");
+        chakraregenerationLore.add(ChatColor.GRAY + "Regenerates chakra over time,");
+        chakraregenerationLore.add(ChatColor.GRAY + "allowing you to use your");
+        chakraregenerationLore.add(ChatColor.GRAY + "abilities more frequently.");
+        chakraregenerationMeta.setLore(chakraregenerationLore);
 
-        lightBlueDye.setItemMeta(lightBlueDyeMeta);
-        player.getInventory().setItem(8, lightBlueDye);
+        chakraregeneration.setItemMeta(chakraregenerationMeta);
+        player.getInventory().setItem(8, chakraregeneration);
     }
 
 
